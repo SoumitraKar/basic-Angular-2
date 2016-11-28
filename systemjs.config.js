@@ -4,6 +4,7 @@
  * System configuration for Angular samples
  * Adjust as necessary for your application needs.
  */
+
 (function (global) {
   System.config({
     // DEMO ONLY! REAL CODE SHOULD NOT TRANSPILE IN THE BROWSER
