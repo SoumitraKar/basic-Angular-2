@@ -7,4 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class slidingSideBarComponent {
   @Input() pageName: string;
+  public show_left = true;
+  show_hide_left() {
+    
+    this.show_left = !this.show_left;
+  }
 }

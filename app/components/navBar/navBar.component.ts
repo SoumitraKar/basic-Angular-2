@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ROUTER_DIRECTIVE } from '@angular/router';
 
 @Component({
   selector: 'navBar-component',

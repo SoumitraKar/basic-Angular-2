@@ -7,4 +7,4 @@ import { slidingSideBarComponent }   from './slidingSideBar/slidingSideBar.compo
   declarations: [ slidingSideBarComponent ],
   bootstrap:    [ slidingSideBarComponent ]
 })
-export class landingPageModule {  }
+export class slidingSideBarModule {  }
