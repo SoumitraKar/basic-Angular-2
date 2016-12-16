@@ -12,7 +12,7 @@ import { projectPage } from './pages/projectPage/projectPage.component';
 
 const appRoutes: Routes = [ // Internal routing 
   { path: 'Dashboard', component: Dashboard },
-  { path: 'projectPage', component: projectPage }
+  { path: 'projectPage/:id', component: projectPage }
 ];
 
 @NgModule({

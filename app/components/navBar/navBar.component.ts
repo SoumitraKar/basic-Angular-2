@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ROUTER_DIRECTIVE } from '@angular/router';
+import { Router, ActivatedRoute, ROUTER_DIRECTIVE } from '@angular/router';
 
 @Component({
   selector: 'navBar-component',
@@ -7,5 +7,14 @@ import { ROUTER_DIRECTIVE } from '@angular/router';
   styleUrls: ['./app/components/navBar/navBar.component.css']
 })
 export class navBarComponent {
-  @Input() pageName: string;
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute
+  ) {}
+  public proj;
+  public project = "project1";
+  @Input() projects = [];
+  projectPageRoute() {
+  this.router.navigate(['projectPage', this.project]);
+  }
 }

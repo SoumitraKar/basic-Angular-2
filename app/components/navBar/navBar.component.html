@@ -1,8 +1,10 @@
 <div class="nav-bar">
-  Limber 
+  Limber  {{proj}}
   <select class = "nav-select-project">
-    <option value="project">Project 1</option>
+    <option *ngFor = "let project of projects" value="project.projectId">
+      <a [routerLink]="['projectPage']">{{project.projectName}}</a>
+    </option>
   </select>
   <a [routerLink]="['Dashboard']">Dashboard</a>
-  <a [routerLink]="['projectPage']">projectPage</a>
+  <input type = "button" (click) = "projectPageRoute()" value = "Project Page">
 </div>
